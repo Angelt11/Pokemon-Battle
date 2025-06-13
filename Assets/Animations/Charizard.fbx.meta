@@ -573,7 +573,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: bd_ev018_lies00loop
+      name: Evlies1loop
       takeName: bd_ev018_lies00loop
       internalID: 7718223752527261793
       firstFrame: 0
@@ -602,7 +602,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: bd_ev100_runfly
+      name: Evrunfly
       takeName: bd_ev100_runfly
       internalID: 6162629562121808806
       firstFrame: 0
