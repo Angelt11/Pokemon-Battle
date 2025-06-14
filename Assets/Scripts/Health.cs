@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -8,7 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Slider _healthSlider;
     [SerializeField]
-    private float _initiateHealth = 200f;
+    private float _initialHealth = 200f;
     [SerializeField]
     private UnityEvent<float> _onUpdateHealth;
     [SerializeField]
@@ -19,12 +18,12 @@ public class Health : MonoBehaviour
     public float CurrentHealth => _currentHealth;
     public void InitializeHealth()
     {
-        _currentHealth = _initiateHealth;
+        _currentHealth = _initialHealth;
         UpdateHealth();
     }
     private void UpdateHealth()
     {
-        _onUpdateHealth?.Invoke(_currentHealth / _initiateHealth);
+        _onUpdateHealth?.Invoke(_currentHealth / _initialHealth);
     }
     public void TakeDamage(float damage)
     {

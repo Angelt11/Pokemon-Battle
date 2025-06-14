@@ -14,7 +14,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField]
     private UnityEvent _onBattleStarted;
     private List<Fighter> _fighters = new List<Fighter>();
-    private Coroutine _battleCourutine;
+    private Coroutine _battleCoroutine;
     public void AddFighter(Fighter fighter)
     {
         _fighters.Add(fighter);
@@ -34,9 +34,9 @@ public class BattleManager : MonoBehaviour
     }
     public void StartBattle()
     {
-        _battleCourutine = StartCoroutine(BattleCourutine());
+        _battleCoroutine = StartCoroutine(BattleCoroutine());
     }
-    private IEnumerator BattleCourutine()
+    private IEnumerator BattleCoroutine()
     {
         _onBattleStarted?.Invoke();
         while (_fighters.Count > 1)
@@ -56,5 +56,6 @@ public class BattleManager : MonoBehaviour
             }
             yield return null;
         }
+        _onBattleFinished?.Invoke();
     }
 }
