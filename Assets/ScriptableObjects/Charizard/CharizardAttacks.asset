@@ -17,9 +17,11 @@ MonoBehaviour:
     maxDamage: 100
     attackTime: 2
     animationName: Special
+    soundName: Flamethrower
     particlesPrefab: {fileID: 0}
   - minDamage: 30
     maxDamage: 60
     attackTime: 3
     animationName: Throw
+    soundName: Rock_Throw
     particlesPrefab: {fileID: 0}

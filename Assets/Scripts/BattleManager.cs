@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+    using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
@@ -23,6 +23,11 @@ public class BattleManager : MonoBehaviour
     public void RemoveFighter(Fighter fighter)
     {
         _fighters.Remove(fighter);
+        if (_battleCoroutine != null)
+        {
+            StopCoroutine(_battleCoroutine);
+            _battleCoroutine = null;
+        }
     }
     private void CheckFighters()
     {
@@ -47,7 +52,11 @@ public class BattleManager : MonoBehaviour
             {
                 defender = _fighters[Random.Range(0, _fighters.Count)];
             }
+            attacker.transform.LookAt(defender.transform);
+            defender.transform.LookAt(attacker.transform);
             Attack attack = attacker.Attacks.GetRandomAttack();
+            SoundManager.instance.Play(attack.soundName);
+            attacker.CharacterAnimator.Play(attack.animationName);
             yield return new WaitForSeconds(attack.attackTime);
             defender.Health.TakeDamage(Random.Range(attack.minDamage, attack.maxDamage));
             if (defender.Health.CurrentHealth <= 0)
