@@ -36,9 +36,14 @@ public class BattleManager : MonoBehaviour
             return;
         }
         _onFightersReady?.Invoke();
+        StartBattle();
     }
     public void StartBattle()
     {
+        foreach (Fighter fighter in _fighters)
+        {
+            fighter.InitializeFighter();
+        }
         _battleCoroutine = StartCoroutine(BattleCoroutine());
     }
     private IEnumerator BattleCoroutine()
@@ -63,7 +68,7 @@ public class BattleManager : MonoBehaviour
             {
                 _fighters.Remove(defender);
             }
-            yield return null;
+            yield return new WaitForSeconds(1f);
         }
         _onBattleFinished?.Invoke();
     }
