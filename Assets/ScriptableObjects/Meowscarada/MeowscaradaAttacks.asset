@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: MeowscaradaAttacks
   m_EditorClassIdentifier: 
   attacks:
-  - minDamage: 50
+  - attackName: Leaf_Tornado
+    minDamage: 50
     maxDamage: 100
     attackTime: 2
     animationName: Attack1
     soundName: Leaf_Tornado
+    hitParticlesPrefab: {fileID: 0}
     particlesPrefab: {fileID: 0}
-  - minDamage: 30
+  - attackName: Razor_Leaf
+    minDamage: 30
     maxDamage: 60
     attackTime: 3
     animationName: Attack2
     soundName: Razor_Leaf
+    hitParticlesPrefab: {fileID: 0}
     particlesPrefab: {fileID: 0}
