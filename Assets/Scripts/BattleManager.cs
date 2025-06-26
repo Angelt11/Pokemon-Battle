@@ -8,7 +8,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField]
     private int _numberOfFighters = 2;
     [SerializeField]
-    private UnityEvent _onFightersReady;
+    private UnityEvent _onBattleStopped;
     [SerializeField]
     private UnityEvent _onBattleFinished;
     [SerializeField]
@@ -24,6 +24,15 @@ public class BattleManager : MonoBehaviour
     public void RemoveFighter(Fighter fighter)
     {
         _fighters.Remove(fighter);
+        if (_fighters.Count < 2)
+        {
+            if (_battleCoroutine != null)
+            {
+                StopCoroutine(_battleCoroutine);
+                _battleCoroutine = null;
+            }
+            _onBattleStopped?.Invoke();
+        }
         if (_battleCoroutine != null)
         {
             StopCoroutine(_battleCoroutine);
@@ -36,8 +45,7 @@ public class BattleManager : MonoBehaviour
         {
             return;
         }
-        _onFightersReady?.Invoke();
-        StartBattle();
+        _onBattleStarted?.Invoke();
     }
     public void StartBattle()
     {
@@ -49,7 +57,6 @@ public class BattleManager : MonoBehaviour
     }
     private IEnumerator BattleCoroutine()
     {
-        _onBattleStarted?.Invoke();
         while (_fighters.Count > 1)
         {
             Fighter attacker = _fighters[Random.Range(0, _fighters.Count)];
