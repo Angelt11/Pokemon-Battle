@@ -33,11 +33,7 @@ public class BattleManager : MonoBehaviour
             }
             _onBattleStopped?.Invoke();
         }
-        if (_battleCoroutine != null)
-        {
-            StopCoroutine(_battleCoroutine);
-            _battleCoroutine = null;
-        }
+        
     }
     private void CheckFighters()
     {
@@ -80,7 +76,7 @@ public class BattleManager : MonoBehaviour
             defender.Health.TakeDamage(_damageTarget);
             if (defender.Health.CurrentHealth <= 0)
             {
-                _fighters.Remove(defender);
+                RemoveFighter(defender);
             }
             yield return new WaitForSeconds(1f);
         }
