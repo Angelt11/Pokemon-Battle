@@ -4457,11 +4457,11 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 58743d4dd677947498c346b640615bb1, type: 3}
     soundName: Go!
   - sprite: {fileID: 21300000, guid: a72d26377dc05c54ea017a5059b8916a, type: 3}
-    soundName: 1
+    soundName: 1_Meele
   - sprite: {fileID: 21300000, guid: 21bc57b0b894e0642bfcb5c3f91f2bd7, type: 3}
-    soundName: 2
+    soundName: 2_Meele
   - sprite: {fileID: 21300000, guid: d645cbe22d940724d9f3e4d79812627f, type: 3}
-    soundName: 3
+    soundName: 3_Meele
   _animationName: TimerShowSeconds
   _onTimerEnd:
     m_PersistentCalls:
