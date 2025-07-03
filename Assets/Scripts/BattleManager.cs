@@ -18,7 +18,7 @@ public class BattleManager : MonoBehaviour
     private DamageTarget _damageTarget = new DamageTarget();
     public void AddFighter(Fighter fighter)
     {
-        MessageFrame.Instance.ShowMessage($"Fighter {fighter.Name} has joined the battle.");
+        MessageFrame.Instance.ShowMessage($"{fighter.Name} has joined the battle!");
         _fighters.Add(fighter);
         CheckFighters();
     }
@@ -27,14 +27,17 @@ public class BattleManager : MonoBehaviour
         _fighters.Remove(fighter);
         if (_fighters.Count < 2)
         {
-            if (_battleCoroutine != null)
+            StopBattle();
+        }
+    }
+    private void StopBattle()
+    {
+        if (_battleCoroutine != null)
             {
                 StopCoroutine(_battleCoroutine);
                 _battleCoroutine = null;
             }
             _onBattleStopped?.Invoke();
-        }
-
     }
     private void CheckFighters()
     {
@@ -42,14 +45,19 @@ public class BattleManager : MonoBehaviour
         {
             return;
         }
+        StopBattle();
+        InitializeFighters();
         _onBattleStarted?.Invoke();
     }
-    public void StartBattle()
+    private void InitializeFighters()
     {
         foreach (Fighter fighter in _fighters)
         {
             fighter.InitializeFighter();
         }
+    }
+    public void StartBattle()
+    {
         _battleCoroutine = StartCoroutine(BattleCoroutine());
     }
     private IEnumerator BattleCoroutine()
