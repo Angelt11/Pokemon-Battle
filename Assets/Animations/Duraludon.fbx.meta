@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b96dc777ce0f5204a8c02d60dce6909a
+guid: ff0e6509fa3ed864c8d0332b977f9337
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: IronLeavesAppear
-      takeName: Armature|Armature|pm1010_00_00_ba02_roar01|Base Layer
-      internalID: -6782173274253376546
+      name: DuraludonAppear
+      takeName: Armature|Armature|pm0884_00_00_ba02_roar01|Base Layer
+      internalID: -5736268917495858543
       firstFrame: 0
-      lastFrame: 141
+      lastFrame: 181
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -60,11 +60,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IronLeavesIdle
-      takeName: Armature|Armature|pm1010_00_00_ba10_waitA01|Base Layer
-      internalID: 8292520122120379340
+      name: DuraludonIdle
+      takeName: Armature|Armature|pm0884_00_00_ba10_waitA01|Base Layer
+      internalID: -9203145558013668864
       firstFrame: 0
-      lastFrame: 160
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -89,11 +89,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IronLeavesAttack
-      takeName: Armature|Armature|pm1010_00_00_ba20_buturi01|Base Layer
-      internalID: -8893899757063477438
+      name: DuraludonAttack
+      takeName: Armature|Armature|pm0884_00_00_ba20_buturi01|Base Layer
+      internalID: -7568781974509727940
       firstFrame: 0
-      lastFrame: 111
+      lastFrame: 161
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -118,98 +118,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: IronLeavesSpecAttack
-      takeName: Armature|Armature|pm1010_00_00_ba21_tokusyu01|Base Layer
-      internalID: 801584592606506955
+      name: DuraludonSpecAttack
+      takeName: Armature|Armature|pm0884_00_00_ba21_tokusyu01|Base Layer
+      internalID: 453711221915017875
       firstFrame: 0
-      lastFrame: 139
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: IronLeavesSleep
-      takeName: Armature|Armature|pm1010_00_00_eye01|Base Layer
-      internalID: 8922120334148227749
-      firstFrame: 0
-      lastFrame: 160
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: IronLeavesSleep2
-      takeName: Armature|Armature|pm1010_00_00_loop01|Base Layer
-      internalID: -4091146007895542012
-      firstFrame: 0
-      lastFrame: 384
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: IronLeavesSleep3
-      takeName: Armature|Armature|pm1010_00_00_mouth01|Base Layer
-      internalID: 2478403583489562232
-      firstFrame: 0
-      lastFrame: 160
+      lastFrame: 151
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
