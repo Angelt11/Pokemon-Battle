@@ -16,16 +16,16 @@ MonoBehaviour:
   - attackName: Dragon_Ascent
     minDamage: 50
     maxDamage: 100
-    attackTime: 2
+    attackTime: 3
     animationName: specialex
     soundName: Dragon_Ascent
-    hitParticlesPrefab: {fileID: 2504214343621411470, guid: 3ed0d324122d7b24eaec75c55c74aafc, type: 3}
-    particlesPrefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
+    hitParticlesPrefab: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
+    particlesPrefab: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
   - attackName: Dragon_Pulse
     minDamage: 30
     maxDamage: 60
-    attackTime: 3
+    attackTime: 2
     animationName: special
     soundName: Dragon_Pulse
-    hitParticlesPrefab: {fileID: 2504214343621411470, guid: 3ed0d324122d7b24eaec75c55c74aafc, type: 3}
-    particlesPrefab: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}
+    hitParticlesPrefab: {fileID: 8771972552311404799, guid: 840c2ba2d0c797f4b8814b6f15f3aa0d, type: 3}
+    particlesPrefab: {fileID: 8771972552311404799, guid: 840c2ba2d0c797f4b8814b6f15f3aa0d, type: 3}

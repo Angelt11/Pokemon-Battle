@@ -43,8 +43,13 @@ public class MessageFrame : MonoBehaviour
         for (int i = 0; i < _currentText.Length; i++)
         {
             _text.text += _currentText[i];
+            if (_currentText[i] != ' ')
+            { 
+                SoundManager.instance.Play("TypeWrite", 3.5f);
+            }
             yield return new WaitForSeconds(_timeBetweenLetters);
         }
+    
         yield return new WaitForSeconds(_timeToHide);
         _animator.Play(_hideAnimationName, 0, 0f);
     }
