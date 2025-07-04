@@ -19,13 +19,13 @@ MonoBehaviour:
     attackTime: 3
     animationName: Attack1
     soundName: Leaf_Tornado
-    hitParticlesPrefab: {fileID: 2360655870356088562, guid: 57a776ff377f3c44e8403e2067a4d41f, type: 3}
-    particlesPrefab: {fileID: 2360655870356088562, guid: 57a776ff377f3c44e8403e2067a4d41f, type: 3}
+    hitParticlesPrefab: {fileID: 4772634663576830964, guid: e1385af346f4e624eb313ec1ea4fcd7e, type: 3}
+    particlesPrefab: {fileID: 4772634663576830964, guid: e1385af346f4e624eb313ec1ea4fcd7e, type: 3}
   - attackName: Razor_Leaf
     minDamage: 30
     maxDamage: 60
     attackTime: 2
     animationName: Attack2
     soundName: Razor_Leaf
-    hitParticlesPrefab: {fileID: 5112403345868107898, guid: e92789a565896d947a26938214f3fbd5, type: 3}
-    particlesPrefab: {fileID: 5112403345868107898, guid: e92789a565896d947a26938214f3fbd5, type: 3}
+    hitParticlesPrefab: {fileID: 2353600328335836179, guid: ceec7516237b4104b94300043ca39784, type: 3}
+    particlesPrefab: {fileID: 2353600328335836179, guid: ceec7516237b4104b94300043ca39784, type: 3}
